@@ -68,6 +68,8 @@
 {{ skip (printf `%s/%s/%s` $root_dir $project_name_alphanumeric_underscore `resources/app-deployment-resource.yml`) }}
 {{ skip (printf `%s/%s/%s` $root_dir $project_name_alphanumeric_underscore `resources/data-preparation-resource.yml`) }}
 {{ skip (printf `%s/%s/%s` $root_dir $project_name_alphanumeric_underscore `resources/README_agentops.md`) }}
+{{ skip (printf `%s/%s/%s` $root_dir $project_name_alphanumeric_underscore `databricks_agentops.yml`) }}
+{{ skip (printf `%s/%s/%s` $root_dir $project_name_alphanumeric_underscore `README_agentops.md`) }}
 
 {{ if (eq .input_setup_cicd_and_project `Project_Only`) }}
     {{ skip (printf `%s/%s` $root_dir `.azure`) }}
